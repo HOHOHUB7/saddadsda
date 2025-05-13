@@ -1,9 +1,10 @@
 const axios = require('axios');
 const qs = require('qs');
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const PORT = 80;
-
+app.use(cors());
 const apiUrl = 'https://duspay.com.br/v3/pix/qrcode';
 
 var client_id = `lucia_7023993087`
